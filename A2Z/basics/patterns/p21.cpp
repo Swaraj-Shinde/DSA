@@ -1,0 +1,29 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int n,i,j;
+    cin>>n;
+    for(i=1;i<=n;i++)
+    {
+        if(i==1 || i==n)
+        {
+            for(j=1;j<=n;j++)
+            {
+                cout<<"*";
+            }
+        }
+        else
+        {
+            cout<<"*";
+            for(j=1;j<n-1;j++)
+            {
+                cout<<"-";
+            }
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+    return 0;
+}
